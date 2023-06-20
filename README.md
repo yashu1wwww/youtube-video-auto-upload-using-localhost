@@ -5,6 +5,8 @@ Note: Use accounts that do not have two-factor authentication.
 
 replace email and password in 1oth and 11th line..
 
+Replace the 26th line with the path where the video is located...
+
 After downloading the folder, extract it and open cmd. Enter "python" to find your Python version. Then, enter "pip install undetected_chromedriver" in the cmd.
 
 After downloading the chromedriver (https://chromedriver.chromium.org/downloads), extract it to the downloaded folder and ensure that it matches the chrome version of your PC. Finally, enter "upload.py" or double click on that file...
