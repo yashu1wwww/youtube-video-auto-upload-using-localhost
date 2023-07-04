@@ -1,5 +1,5 @@
 # youtube-video-auto-upload
-youtube video auto upload using selenium with python
+youtube video auto upload using selenium with python using localhost..
 
 Note: Use accounts that do not have two-factor authentication.
 
