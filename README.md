@@ -31,11 +31,9 @@ cd C:\Users\Hp\AppData\Local\Google\Chrome\Application
 
 chrome.exe --remote-debugging-port=9222 --user-data-dir="C:\Users\Hp\Desktop\Bots\Chromedriver\Localhost"
 
-In lines 11 and 12 of the code, change the comments if you want to use something different.
+In lines 18 and 20th of the code, change the 18th line of the code with video path (create video folder and folder must be in localhost contain folder only) & 20th line with video description change it...
 
-In line 19, change the movie video URL to the required URL.
-
-That's it! The URL will open in the previously opened localhost Chrome and 500+ auto comments will be done automatically.
+That's it! The URL will open in the previously opened localhost Chrome and upload video automatically.
 
 in cmd enter
 
