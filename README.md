@@ -1,15 +1,47 @@
 # youtube-video-auto-upload
 youtube video auto upload using selenium with python using localhost..
 
-Note: Use accounts that do not have two-factor authentication.
+https://www.youtube.com/watch?v=FVumnHy5Tzo&t=1s&ab_channel=HelloWorld
 
-replace email and password in 1oth and 11th line..
+"𝙏𝙝𝙚𝙨𝙚 𝙨𝙘𝙧𝙞𝙥𝙩𝙨 𝙮𝙤𝙪 𝙙𝙞𝙙𝙣'𝙩 𝙛𝙞𝙣𝙙 𝙞𝙣 𝙖𝙣𝙮 𝘼𝙄"
 
-Replace the 26th line with the path where the video is located...
+<𝙬𝙖𝙩𝙘𝙝 𝙪𝙥𝙩𝙤 3mins.46sec+ 𝙩𝙝𝙚𝙣 𝙧𝙚𝙢𝙖𝙞𝙣𝙞𝙣𝙜 𝙥𝙖𝙧𝙩 𝙘𝙤𝙥𝙮 𝙩𝙝𝙚 𝙝.𝙥𝙮 𝙨𝙘𝙧𝙞𝙥𝙩 𝙖𝙣𝙙 𝙨𝙖𝙫𝙚 𝙖𝙨 𝙝.𝙥𝙮 𝙖𝙣𝙙 𝙥𝙖𝙨𝙩𝙚 𝙩𝙝𝙖𝙩 𝙛𝙞𝙡𝙚 𝙩𝙝𝙚𝙧𝙚>
 
-After downloading the folder, extract it and open cmd. Enter "python" to find your Python version. Then, enter "pip install undetected_chromedriver" in the cmd.
+C:\Users\Hp\AppData\Local\Google\Chrome\Application
 
-After downloading the chromedriver (https://chromedriver.chromium.org/downloads), extract it to the downloaded folder and ensure that it matches the chrome version of your PC. Finally, enter "upload.py" or double click on that file...
+in my case chrome location(use start in:) is
+
+cd C:\Users\Hp\AppData\Local\Google\Chrome\Application
+
+next,
+
+chrome.exe --remote-debugging-port=9222 --user-data-dir=""(in "enter your localhost path here")
+
+Next, enter this command into the terminal, replacing "enter your localhost path here" with your localhost path:
+
+For example, in my case it is:
+
+chrome.exe --remote-debugging-port=9222 --user-data-dir="C:\Users\Hp\Desktop\Bots\Chromedriver\Localhost"
+
+then new terminal in that folder and enter upload.py
+
+Then, open the command prompt in that folder and paste the following two lines one at a time and press enter. (The code below assumes that you have watched the video and have set up the correct Chrome and localhost path.)
+
+cd C:\Users\Hp\AppData\Local\Google\Chrome\Application
+
+chrome.exe --remote-debugging-port=9222 --user-data-dir="C:\Users\Hp\Desktop\Bots\Chromedriver\Localhost"
+
+In lines 11 and 12 of the code, change the comments if you want to use something different.
+
+In line 19, change the movie video URL to the required URL.
+
+That's it! The URL will open in the previously opened localhost Chrome and 500+ auto comments will be done automatically.
+
+in cmd enter
+
+pip install Random
+
+and hit enter button
 
 👉Python Install Setup=https://youtu.be/4bUOrMj88Pc
 
