@@ -1,4 +1,4 @@
-import undetected_chromedriver as uc
+from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
@@ -6,22 +6,20 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 import time
+import random
 
-email = 'pass100q\n'                  #change to your mail
-password = 'pas12#$%\n'           #change to your pass  
+option = webdriver.ChromeOptions()
+option.add_experimental_option("debuggerAddress","localhost:8080")
 
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver,20)
-url = 'https://accounts.google.com/AddSession?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den-GB%26next%3D%252F&hl=en-GB&passive=false&service=youtube&uilel=0'
-driver.get(url)
-
-wait.until(EC.visibility_of_element_located((By.NAME,'identifier'))).send_keys(email)
-#time.sleep(4)
-wait.until(EC.visibility_of_element_located((By.NAME,'Passwd'))).send_keys(password)
-time.sleep(14)  
-driver.find_element_by_xpath('/html/body/ytd-app/div[1]/div/ytd-masthead/div[4]/div[3]/div[2]/ytd-topbar-menu-button-renderer[1]/div/a/yt-icon-button/button').click()
+driver = webdriver.Chrome(options=option)
+time.sleep(2)
+driver.get("https://www.youtube.com/upload")
+time.sleep(6)
+driver.find_element_by_xpath('//input[@type="file"]').send_keys(r"C:\Users\Hp\Desktop\nest\videos\video is good.mp4") #replace to your video location path & what the video title in path is the title fpr video 
 time.sleep(3)
-driver.find_element_by_xpath('/html/body/ytd-app/ytd-popup-container/tp-yt-iron-dropdown/div/ytd-multi-page-menu-renderer/div[3]/div[1]/yt-multi-page-menu-section-renderer/div[2]/ytd-compact-link-renderer[1]/a/tp-yt-paper-item/div[2]/yt-formatted-string[1]').click()
+driver.find_element_by_xpath("/html/body/ytcp-uploads-dialog/tp-yt-paper-dialog/div/ytcp-animatable[1]/ytcp-ve/ytcp-video-metadata-editor/div/ytcp-video-metadata-editor-basics/div[2]/ytcp-video-description/div/ytcp-social-suggestions-textbox/ytcp-form-input-container/div[1]/div[2]/div/ytcp-social-suggestion-input/div").send_keys("new video good video") #description change for yours.
+time.sleep(3)
+driver.find_element_by_id("offRadio").click() #for kids it will tick..
 time.sleep(5)
-driver.find_element_by_xpath('//input[@type="file"]').send_keys(r"C:\Users\Hp\Desktop\Bots\gmail auto send\charlie.mp4") #replace with your path where video available
-time.sleep(20)                                                                                                                                  
+driver.find_element_by_xpath("/html/body/ytcp-uploads-dialog/tp-yt-paper-dialog/div/div[1]/div/div/ytcp-icon-button").click()
+time.sleep(20)                                                                                                                   
