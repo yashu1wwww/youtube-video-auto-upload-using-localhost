@@ -1,5 +1,5 @@
 # youtube-video-auto-upload
-youtube video auto upload using selenium with python using localhost..
+youtube video auto upload using selenium with python on localhost
 
 https://www.youtube.com/watch?v=FVumnHy5Tzo&t=1s&ab_channel=HelloWorld
 
