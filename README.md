@@ -41,6 +41,8 @@ pip install Random
 
 and hit enter button
 
+# 👉 Note:Every time YouTube updates the code, it varies. So, open the YouTube video, press 'Ctrl+Shift+C' to open the developer tools,
+
 👉Python Install Setup=https://youtu.be/4bUOrMj88Pc
 
 👉Note:-
